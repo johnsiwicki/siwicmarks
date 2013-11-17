@@ -1,0 +1,10 @@
+<% if user_signed_in? %>
+
+<h1>YOU ARE IN!</h1>
+<% else %>
+
+<h1>Welcome to Siwicmark</h1>
+<p>Home Page!</p>
+
+<p> <%= link_to "Sign Up Now", new_user_registration_path, class: "btn btn-primary btn-large" %></p>
+<% end %>
